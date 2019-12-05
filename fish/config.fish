@@ -1,5 +1,6 @@
 ### NOT use abbreviation for directly (https://blogenist.jp/2019/06/20/8807/#i-10)
 set -g fish_prompt_pwd_dir_length 0
+set -g theme_display_date no
 
 
 ### Setting the command to reload the fish config file
