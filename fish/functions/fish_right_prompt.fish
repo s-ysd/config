@@ -1,5 +1,6 @@
 # You can override some default right prompt options in your config.fish:
 #     set -g theme_date_format "+%a %H:%M"
+set -g theme_date_format "+%Y/%m/%d(%a) %H:%M"
 
 function __bobthefish_cmd_duration -S -d 'Show command duration'
     [ "$theme_display_cmd_duration" = "no" ]

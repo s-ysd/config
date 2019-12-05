@@ -1075,7 +1075,8 @@ function fish_prompt -d 'bobthefish, a fish theme optimized for awesome'
     # Virtual environments
     __bobthefish_prompt_desk
     __bobthefish_prompt_rubies
-    __bobthefish_prompt_virtualfish
+### NOT show the virtual environment info (2019/12/05)
+#    __bobthefish_prompt_virtualfish
     __bobthefish_prompt_virtualgo
     __bobthefish_prompt_nvm
 
@@ -1085,6 +1086,7 @@ function fish_prompt -d 'bobthefish, a fish theme optimized for awesome'
     set -l git_root_dir (__bobthefish_git_project_dir $real_pwd)
     set -l hg_root_dir (__bobthefish_hg_project_dir $real_pwd)
 
+    echo \n
     if [ "$git_root_dir" -a "$hg_root_dir" ]
         # only show the closest parent
         switch $git_root_dir
@@ -1094,7 +1096,9 @@ function fish_prompt -d 'bobthefish, a fish theme optimized for awesome'
                 __bobthefish_prompt_hg $hg_root_dir $real_pwd
         end
     else if [ "$git_root_dir" ]
-        __bobthefish_prompt_git $git_root_dir $real_pwd
+        ### Remove the redundant directly path(2019/12/05)
+        #__bobthefish_prompt_git $git_root_dir $real_pwd
+        __bobthefish_prompt_git $git_root_dir
     else if [ "$hg_root_dir" ]
         __bobthefish_prompt_hg $hg_root_dir $real_pwd
     else
