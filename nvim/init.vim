@@ -47,7 +47,6 @@ if dein#load_state('/Users/syoshida/.cache/dein')
 
   " Begin colorscheme list
   call dein#add('dracula/vim') " install many colorschemes
-  call dein#add('flazz/vim-colorschemes') " install many colorschemes
   call dein#add('srcery-colors/srcery-vim') " colorscheme (https://github.com/srcersrcery-colors/srcery-vim)
   call dein#add('felipesousa/rupza') " colorscheme (https://github.com/felipesousa/rupza)
   call dein#add('Yggdroot/duoduo') " colorscheme (https://github.com/Yggdroot/duoduo)

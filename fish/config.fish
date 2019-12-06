@@ -18,10 +18,10 @@ end
 
 
 ##Set of alias in "fish"
-balias ef 'vi ~/.config/fish/config.fish'
+balias ef 'vi ~/Dropbox/Mackup/.config/fish/config.fish'
 balias icrar 'cd ~/Dropbox/M1/research/ICRAR/'
 balias ls 'gls --color -Fa'
-balias neovim 'vi ~/.config/nvim/init.vim'
+balias neovim 'vi ~/Dropbox/Mackup/.config/nvim/init.vim'
 balias paper 'cd ~/Documents/Overleaf/Yoshida+19a'
 balias py python
 balias vi nvim

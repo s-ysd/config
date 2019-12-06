@@ -1044,6 +1044,7 @@ end
 function fish_prompt -d 'bobthefish, a fish theme optimized for awesome'
     # Save the last status for later (do this before anything else)
     set -l last_status $status
+    echo \n
 
     # Use a simple prompt on dumb terminals.
     if [ "$TERM" = "dumb" ]
@@ -1086,7 +1087,6 @@ function fish_prompt -d 'bobthefish, a fish theme optimized for awesome'
     set -l git_root_dir (__bobthefish_git_project_dir $real_pwd)
     set -l hg_root_dir (__bobthefish_hg_project_dir $real_pwd)
 
-    echo \n
     if [ "$git_root_dir" -a "$hg_root_dir" ]
         # only show the closest parent
         switch $git_root_dir
