@@ -1077,7 +1077,7 @@ function fish_prompt -d 'bobthefish, a fish theme optimized for awesome'
     __bobthefish_prompt_desk
     __bobthefish_prompt_rubies
 ### NOT show the virtual environment info (2019/12/05)
-#    __bobthefish_prompt_virtualfish
+    #__bobthefish_prompt_virtualfish
     __bobthefish_prompt_virtualgo
     __bobthefish_prompt_nvm
 
@@ -1098,7 +1098,8 @@ function fish_prompt -d 'bobthefish, a fish theme optimized for awesome'
     else if [ "$git_root_dir" ]
         ### Remove the redundant directly path(2019/12/05)
         #__bobthefish_prompt_git $git_root_dir $real_pwd
-        __bobthefish_prompt_git $git_root_dir
+        #__bobthefish_prompt_git $git_root_dir
+        __bobthefish_prompt_git $real_pwd
     else if [ "$hg_root_dir" ]
         __bobthefish_prompt_hg $hg_root_dir $real_pwd
     else

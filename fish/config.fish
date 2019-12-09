@@ -3,6 +3,7 @@ set -g fish_prompt_pwd_dir_length 0
 set -g theme_display_date no
 
 
+
 ### Setting the command to reload the fish config file
 function reload
   source ~/.config/fish/config.fish
@@ -24,6 +25,7 @@ balias ls 'gls --color -Fa'
 balias neovim 'vi ~/Dropbox/Mackup/.config/nvim/init.vim'
 balias paper 'cd ~/Documents/Overleaf/Yoshida+19a'
 balias py python
+balias thesis 'cd ~/Documents/Overleaf/MasterThesisTemplate'
 balias vi nvim
 
 
