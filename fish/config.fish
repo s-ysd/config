@@ -20,12 +20,14 @@ end
 
 ##Set of alias in "fish"
 balias ef 'vi ~/Dropbox/Mackup/.config/fish/config.fish'
-balias icrar 'cd ~/Dropbox/M1/research/ICRAR/'
+balias gd 'git diff'
+balias gl 'git log --graph'
+balias res 'cd ~/Dropbox/Research/Master_RadiosedHRSandGLEAM'
 balias ls 'gls --color -Fa'
 balias neovim 'vi ~/Dropbox/Mackup/.config/nvim/init.vim'
-balias paper 'cd ~/Documents/Overleaf/Yoshida+19a'
+balias paper 'cd ~/Documents/s_yoshida2019'
 balias py python
-balias thesis 'cd ~/Documents/Overleaf/MasterThesisTemplate'
+balias thesis 'cd ~/Documents/MasterThesis'
 balias vi nvim
 
 
